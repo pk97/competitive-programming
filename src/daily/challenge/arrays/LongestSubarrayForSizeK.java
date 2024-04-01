@@ -38,7 +38,7 @@ public class LongestSubarrayForSizeK {
             if (!map.containsKey(ps)) {
                 map.put(ps, i+1);
             }
-            if (map.conatinsKey(ps -k)) {
+            if (map.containsKey(ps -k)) {
                 ans = Math.max(ans, i - map.get(ps -k));
             }
         }
