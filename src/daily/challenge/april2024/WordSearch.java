@@ -1,5 +1,7 @@
 package daily.challenge.april2024;
 
+import java.util.Stack;
+
 public class WordSearch {
 
         public static boolean exist(char[][] board, String word) {
@@ -39,5 +41,55 @@ public class WordSearch {
 
             System.out.println(x);
         }
+
+    public String makeGood(String s) {
+
+        Stack<Character> st = new Stack<>();
+
+        for (char x : s.toCharArray()) {
+            if (!st.isEmpty() && Math.abs(st.peek() - x) == 32)  {
+                st.pop();
+            }
+            else {
+                st.add(x);
+            }
+        }
+
+        StringBuilder sb = new StringBuilder();
+
+        for(Character c : st) {
+            sb.append(c);
+        }
+        return sb.toString();
+
+    }
+
+    public String minRemoveToMakeValid(String s) {
+        if (s.isEmpty()) return s;
+        Stack<Integer> st = new Stack<>();
+        char[] c = s.toCharArray();
+        for(int i=0;i< c.length;i++) {
+            if (c[i] == '(') {
+                st.push(i);
+            }
+            else if (c[i] == ')') {
+                if (st.isEmpty()) {
+                    st.push(i);
+                }
+                else {
+                    st.pop();
+                }
+            }
+        }
+
+        StringBuilder sb = new StringBuilder();
+        sb.append(s);
+
+        while(!st.isEmpty()) {
+            int i = st.pop();
+            sb.delete(i,i+1);
+        }
+        return sb.toString();
+    }
     }
 
