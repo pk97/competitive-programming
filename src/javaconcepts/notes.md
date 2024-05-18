@@ -29,3 +29,17 @@ substring(int start) and substring(int start, int end)
 indexOf(String str) and lastIndexOf(String str)
 deleteCharAt(int index) 
 ```
+- Final, finally, finalize keywords
+- garbage collection
+  - Algorithm of gc
+  - memory leaks 
+  - Young gen and old gen memory leaks
+- Project code quality
+- Monitoring tools of Spring application
+- Integrate mysql with SPringboot
+- covert microservice to Serverless architecture
+  - Cloud, docker, monolith to 
+- Springboot Exceptions
+  - ControllerAdvice global exceptionHandling.
+- Qualifier annotation, Primary Annotaion
+- Aspect oriented programming
