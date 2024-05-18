@@ -5,7 +5,7 @@
                return a array of strings
 3. length() -> length of the string.
 
-![img.png](img.png)
+![img.png](../daily/challenge/april2024/img.png)
 
 
 ### StringBuilder
@@ -29,6 +29,8 @@ substring(int start) and substring(int start, int end)
 indexOf(String str) and lastIndexOf(String str)
 deleteCharAt(int index) 
 ```
+Interview Questions 
+
 - Final, finally, finalize keywords
 - garbage collection
   - Algorithm of gc

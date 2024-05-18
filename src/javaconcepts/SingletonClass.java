@@ -1,5 +1,6 @@
+package javaconcepts;
 
- class Singleton1{
+class Singleton1{
     private static Singleton1 instance = new Singleton1();
 
     private Singleton1(){
