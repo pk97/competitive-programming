@@ -59,8 +59,8 @@ class DisplayMessage() {
 
 ## LISKOV Subsituition PRINCIPLE
 
-- If you substitute child class with parent class then it should not break the code. Child class should not be
-- more restrictive.
+-  Child class should not be more restrictive and break the contract of the parent.
+-  The principle defines that objects of a superclass shall be replaceable with objects of its subclasses without breaking the application. That requires the objects of your subclasses to behave in the same way as the objects of your superclass. 
 
 ```
 class Bird {
