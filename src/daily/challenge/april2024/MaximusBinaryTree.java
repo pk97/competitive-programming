@@ -1,7 +1,9 @@
 package daily.challenge.april2024;
 
 import java.util.Arrays;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
 
 public class MaximusBinaryTree {
     
@@ -63,7 +65,7 @@ public class MaximusBinaryTree {
     }
 
     int bfs(int root, List<List<Integer>> adj, int n) {
-        Queue<Integer> q = LinkedList();
+        Queue<Integer> q = new LinkedList();
         boolean[] visited = new boolean[n];
         q.add(root);
         visited[root]=true;
