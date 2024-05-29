@@ -1,0 +1,11 @@
+
+h
+java:S1192
+"FDefine a constant instead of duplicating this literal "Delhi" 4 times.(þ¹¾Çûÿÿÿÿ8“ßÉ§ü1
+L	java:S106"+Replace this use of System.out by a logger.(¹¦…‡úÿÿÿÿ8žßÉ§ü1
+L	java:S106#"+Replace this use of System.out by a logger.(¹¦…‡úÿÿÿÿ8ŸßÉ§ü1
+L	java:S106+"+Replace this use of System.out by a logger.(¹¦…‡úÿÿÿÿ8 ßÉ§ü1
+F	java:S1064"+Replace this use of System.out by a logger.(ü„ê!8 ßÉ§ü1
+L	java:S106<"+Replace this use of System.out by a logger.(µÏ…èùÿÿÿÿ8¡ßÉ§ü1
+M
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8¡ßÉ§ü1

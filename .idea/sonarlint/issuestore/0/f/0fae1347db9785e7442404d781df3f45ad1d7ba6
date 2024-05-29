@@ -1,0 +1,9 @@
+
+w
+java:S3740D"/Provide the parametrized type for this generic.(È°À‡úÿÿÿÿ8í€‘ñú1J$afc89932-840a-4e4e-bb8b-64e80b73133d
+•
+java:S3012$"YUse "Arrays.copyOf", "Arrays.asList", "Collections.addAll" or "System.arraycopy" instead.(Ôò¯ÎJ$57e44942-5f2d-4427-ad46-a27cbbbd5733
+k	java:S106'"+Replace this use of System.out by a logger.(¾ùôŒùÿÿÿÿJ$db4564c9-ec37-4b78-b1fe-13fff91197cd
+ƒ	java:S125Z"<This block of commented-out lines of code should be removed.(Ò†ÁÍùÿÿÿÿ8Ûöñú1J$e224280e-3e23-47d8-a139-a07cdcd0e28f
+O
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8á×–§ü1

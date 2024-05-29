@@ -87,19 +87,19 @@ public class MaximusBinaryTree {
     }
 
     public static void main(String[] args) {
-        //constructMaximumBinaryTree(new int []{3,2,1,6,0,5});
-        construct(new int []{3,2,1,6,0,5}, 0 ,5);
-
-        int[] arr = new int[] {1,2,3,4};
-        String s = "dfdisplay";
-        Arrays.stream(arr)
-                .forEach((x) -> System.out.println(s + x));
-        s ="adsad";
-        Runnable r = () -> {
-            System.out.println(s);
-        };
-//        s = "as213d";
-        r.run();
-//        s ="asdds";
+//        //constructMaximumBinaryTree(new int []{3,2,1,6,0,5});
+//        construct(new int []{3,2,1,6,0,5}, 0 ,5);
+//
+//        int[] arr = new int[] {1,2,3,4};
+//        String s = "dfdisplay";
+//        Arrays.stream(arr)
+//                .forEach((x) -> System.out.println(s + x));
+//        s ="adsad";
+//        Runnable r = () -> {
+//            System.out.println(s);
+//        };
+////        s = "as213d";
+//        r.run();
+////        s ="asdds";
     }
 }
