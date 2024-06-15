@@ -1,4 +1,4 @@
-package blackrock;
+package interview.blackrock;
 
 import java.util.LinkedList;
 import java.util.List;

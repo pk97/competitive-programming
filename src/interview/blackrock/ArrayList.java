@@ -1,4 +1,4 @@
-package blackrock;
+package interview.blackrock;
 
 public class ArrayList<T> {
     private Object[] arr;
