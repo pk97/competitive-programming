@@ -35,13 +35,14 @@ class Singleton1{
 public class SingletonClass {
     private static SingletonClass singletonClass;
     private SingletonClass() {
-
     };
 
     public static   SingletonClass getInstance() {
        if (singletonClass == null) {
            synchronized(SingletonClass.class) {
-               singletonClass = new SingletonClass();
+               if (singletonClass == null) {
+                   singletonClass = new SingletonClass();
+               }
            }
        }
        return singletonClass;

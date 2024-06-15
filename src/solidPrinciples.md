@@ -1,6 +1,6 @@
 # SOLID Principles
 
-<p> This document is maed to verse my memory from time to time whenever needed. I will add less theory but more example
+<p> This document is made to verse my memory from time to time whenever needed. I will add less theory but more example
 and hints so that I remember these concepts for long and it will be easy to retain.</p>
 
 ## S -> Single Responsibility
@@ -143,7 +143,7 @@ addBook();
 removeBook();
 }
 ```
-High level module is dependent on low level module. Inversion is needed.
+High-level modules should not depend on low-level modules; both should depend on abstractions.
 
 ```
 interface Product {

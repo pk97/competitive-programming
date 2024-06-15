@@ -1,11 +1,20 @@
 
-h
+Ž
 java:S1192
-"FDefine a constant instead of duplicating this literal "Delhi" 4 times.(þ¹¾Çûÿÿÿÿ8“ßÉ§ü1
-L	java:S106"+Replace this use of System.out by a logger.(¹¦…‡úÿÿÿÿ8žßÉ§ü1
-L	java:S106#"+Replace this use of System.out by a logger.(¹¦…‡úÿÿÿÿ8ŸßÉ§ü1
-L	java:S106+"+Replace this use of System.out by a logger.(¹¦…‡úÿÿÿÿ8 ßÉ§ü1
-F	java:S1064"+Replace this use of System.out by a logger.(ü„ê!8 ßÉ§ü1
-L	java:S106<"+Replace this use of System.out by a logger.(µÏ…èùÿÿÿÿ8¡ßÉ§ü1
-M
-java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8¡ßÉ§ü1
+"FDefine a constant instead of duplicating this literal "Delhi" 4 times.(þ¹¾Çûÿÿÿÿ8…ûÞãþ1J$434c1d56-46da-40e9-87fa-2085847ab952
+ƒ
+java:S2259H"@A "NullPointerException" could be thrown; "x3" is nullable here.(”Æô¹8›ûÞãþ1J$b32ad5e5-a8e4-491b-a0bb-3cbd9d092d78
+r	java:S106"+Replace this use of System.out by a logger.(¹¦…‡úÿÿÿÿ8ŸûÞãþ1J$eabffdfb-8947-4f68-9764-36bcdebce225
+r	java:S106#"+Replace this use of System.out by a logger.(¹¦…‡úÿÿÿÿ8ŸûÞãþ1J$dab54a5c-3e93-4e5a-8a14-85b0ad1e7bdb
+r	java:S106+"+Replace this use of System.out by a logger.(¹¦…‡úÿÿÿÿ8 ûÞãþ1J$f5c33251-a0a1-416b-b765-692d562459c3
+l	java:S1064"+Replace this use of System.out by a logger.(ü„ê!8¡ûÞãþ1J$0c11e4e0-c3e0-44f1-b758-db622c477362
+r	java:S106<"+Replace this use of System.out by a logger.(µÏ…èùÿÿÿÿ8¢ûÞãþ1J$12d7ccc9-4a71-41b7-bb99-426615a252d7
+l	java:S106B"+Replace this use of System.out by a logger.(´€|8¢ûÞãþ1J$1ecd10ad-e831-44b7-bfa1-6acb44db5cdc
+m	java:S106H"+Replace this use of System.out by a logger.(”Æô¹8£ûÞãþ1J$4095488b-8a0b-4051-9051-9deacd06ba15
+o
+java:S2201K"'The return value of "max" must be used.(É€™›úÿÿÿÿ8£ûÞãþ1J$c2b33a03-8f39-464c-994c-2f769bdf08d4
+y
+java:S1481M"6Remove this unused "totalTransactions" local variable.(“ÇÇŽ8¤ûÞãþ1J$f9edb8c3-5bc6-4e75-aaad-b65bb1f0f28e
+r	java:S106S"+Replace this use of System.out by a logger.(® ±þÿÿÿÿ8¥ûÞãþ1J$2d65152a-5507-4aec-9119-e59c61f42c5b
+l
+java:S1481W")Remove this unused "map2" local variable.(Û›™Î8¥ûÞãþ1J$902b29b5-f2c5-4a91-b51f-2546f372470f

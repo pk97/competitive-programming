@@ -1,9 +1,9 @@
 package javaconcepts.streams;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
+import java.util.stream.Collectors;
+
+import static java.util.stream.Collectors.groupingBy;
 
 public class App {
     public static void main(String[] args) {
@@ -59,7 +59,32 @@ public class App {
 
         System.out.println(x);
 
+        // count transactions
+       Long c = transactions.stream()
+                .collect(Collectors.counting());
 
+        System.out.println("total transactions count "+c);
+
+       Transaction x3 = transactions.stream()
+               .max(Comparator.comparingInt(Transaction::getValue))
+                       .orElse(null);
+
+       System.out.println(x3.getValue());
+
+      transactions.stream()
+                .max(Comparator.comparing(Transaction::getValue));
+
+        int totalTransactions = transactions.stream().map(Transaction::getValue).reduce(0, (a, b) -> a.intValue() + b.intValue());
+
+        Map<Integer, List<Transaction>> map = transactions
+                .stream()
+                .collect(groupingBy(Transaction::getYear));
+
+        map.forEach((key,value) -> System.out.println(key+","+value));
+
+        List<Integer> arr  = Arrays.asList(1,2,1,1,2,4);
+
+        Map<Integer, List<Integer>> map2 = arr.stream().collect(groupingBy(Integer::intValue));
 
     }
 }
