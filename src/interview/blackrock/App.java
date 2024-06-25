@@ -13,9 +13,6 @@ public class App {
         list.add(12);
         list.add(5);
         list.add(5);
-        for (int i = 0; i < list.getSize(); i++) {
-            System.out.println(list.get(i));
-        }
     }
 
     public void reorderList(ListNode head) {
@@ -28,11 +25,11 @@ public class App {
         }
         while (true) {
             start = dq.removeFirst();
-            ListNode end =  dq.removeLast()
+            ListNode end =  dq.removeLast();
             if (start == end) break;
             ans.add(start);
             ans.add(end);
         }
-        return ans;
+//        return ans;
     }
 }

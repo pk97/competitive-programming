@@ -31,7 +31,7 @@ public class ArrayList<T> {
         }
     }
 
-    public T get(int idx) {
-        return arr[idx] as T;
-    }
+//    public T get(int idx) {
+//        return arr[idx] as T;
+//    }
 }

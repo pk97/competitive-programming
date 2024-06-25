@@ -10,9 +10,9 @@ public class App {
 
         Thread t = new Thread(() -> {System.out.println("hi");} );
         Thread t2 = new Apple();
+        Thread t3 = Thread.startVirtualThread(new Apple2());
         t.start();
 
-        List<Integer> l1 = new ArrayList<>();
     }
 }
 class Apple extends Thread {
@@ -23,5 +23,16 @@ class Apple extends Thread {
 
     Apple() {
         super();
+    }
+}
+
+class Apple2 implements Runnable {
+
+    @Override
+    public void run() {
+        for (int i = 0; i < 10; i++) {
+            System.out.println("");
+
+        }
     }
 }
