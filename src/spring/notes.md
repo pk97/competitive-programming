@@ -35,6 +35,7 @@
    such as application-dev.properties, application-prod.properties. In the default file, which is application.properties,
    set profile as spring.profile.env and spring will merge application.properties and the respective env property file.
 5. Spring Actuator is a starter which gives important metrics like requests per second, thread pool size, all beans etc.
+6. @SpringBootApplication - @ComponentScan, @AutoConfiguration, @Configuration
 
 ## Spring Boot and DB ##
 
