@@ -4,6 +4,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 import static java.util.stream.Collectors.groupingBy;
+import static java.util.stream.Collectors.summingInt;
 
 public class App {
     public static void main(String[] args) {
@@ -71,8 +72,6 @@ public class App {
 
        System.out.println(x3.getValue());
 
-      transactions.stream()
-                .max(Comparator.comparing(Transaction::getValue));
 
         int totalTransactions = transactions.stream().map(Transaction::getValue).reduce(0, (a, b) -> a.intValue() + b.intValue());
 
@@ -86,5 +85,25 @@ public class App {
 
         Map<Integer, List<Integer>> map2 = arr.stream().collect(groupingBy(Integer::intValue));
 
+        map2.forEach((key,value) -> System.out.println(key+","+value));
+
+        // List traders in descending order of total transaction amount.
+        System.out.println("List off traders with transaction");
+
+        Map<Trader, Integer> traderListMap = transactions.stream()
+                .collect(groupingBy(Transaction::getTrader,summingInt(Transaction::getValue)));
+
+        traderListMap.forEach((k,v) -> System.out.println(k+","+v));
+
+        Set<Map.Entry<Trader, Integer>> entries = traderListMap.entrySet();
+
+        List<Map.Entry<Trader, Integer>> list = new ArrayList<>();
+        list.addAll(entries);
+        list.stream()
+                .forEach(System.out::println);
+        System.out.println("Desending order -->");
+        list.stream()
+                        .sorted( (a,b) -> b.getValue() - a.getValue())
+                                .forEach(System.out::println);
     }
 }
