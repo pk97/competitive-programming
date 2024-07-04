@@ -52,3 +52,10 @@ At level 2, correct HTTP verbs are used with each request.
 level 3
 HATEOAS
 ![img_1.png](img_1.png)
+
+**Idempotency in APIs**
+- Idempotent implies that a certain operation can be applied many times, without changing the result.
+Get,PUT is by default idempontent.
+- Add a unique identifier in request to make it idempotent.
+
+
