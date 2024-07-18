@@ -45,3 +45,26 @@ Interview Questions
   - ControllerAdvice global exceptionHandling.
 - Qualifier annotation, Primary Annotaion
 - Aspect oriented programming
+
+- Comparator and Comparable
+  - Comparable is implemented by a class and then when can define behavior
+  - of sorting.
+  - Whereas a different class can implement Comparator, take 2 objects of same type and
+  - define which one is bigger. This is used as Lamda in Sort function.
+
+```
+class Abc implements Comparable<Abc>{
+  int age;
+  
+  int compare(Abc t) {
+  this.age - t.age;
+  }
+  
+}
+
+or
+
+list.sort((a,b) -> a.age - b.age)
+
+
+```
