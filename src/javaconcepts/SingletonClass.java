@@ -32,9 +32,11 @@ class Singleton1{
 
 
 //Double-Checked Locking Thread safe implementation
-public class SingletonClass {
+public class SingletonClass implements Cloneable {
     private static SingletonClass singletonClass;
     private SingletonClass() {
+        if (singletonClass !=null)
+            throw new RuntimeException("asdsad");
     };
 
     public static   SingletonClass getInstance() {
@@ -48,6 +50,16 @@ public class SingletonClass {
        return singletonClass;
     }
 
+    @Override
+    public SingletonClass clone() {
+        try {
+            SingletonClass clone = (SingletonClass) super.clone();
+            // TODO: copy mutable state here, so the clone can't change the internals of the original
+            return clone;
+        } catch (CloneNotSupportedException e) {
+            throw new AssertionError();
+        }
+    }
 }
 
 

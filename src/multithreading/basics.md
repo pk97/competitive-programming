@@ -1,12 +1,4 @@
-- Multi tasking
-  - multiple tasks done parallely.
-  - Mutli - process
-    - Chrome and VLC media player running parallel
-  - Multi threading
-    - MS word -> typing and formtting and grammer check. 
-    - Multiple threads of a process execute parallelly, Each thread share the memory of process but have a separate 
-    - stack memory.
-
+![img_2.png](img_2.png)
 Threads also share some resources:
 
 Text area – contains the machine code that is executed.

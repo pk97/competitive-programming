@@ -22,3 +22,6 @@ less space is required.
 - <p> Secondary Index </p>
 - It is stored in a separate memory space. Eg. I want to find all emails, which are not PK. I can create a Secondary Index on it.
 
+-  DB sharding.
+
+
