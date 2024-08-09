@@ -7,6 +7,8 @@ import java.util.Queue;
 
 public class MapInDecreasingOrder {
 
+
+
     public static void ans(String[]  s) {
         Map<String, Integer> map  =new HashMap<>();
 
@@ -23,5 +25,28 @@ public class MapInDecreasingOrder {
 
     public static void main(String[] args) {
         ans(new String[] {"A", "B", "A", "B", "C", "A"});
+       new Derived().method(10);
+    }
+}
+
+class Base
+{
+    void method(int a)
+    {
+        System.out.println("Base class method called with integer a = "+a);
+    }
+
+    void method(double d)
+    {
+        System.out.println("Base class method called with double d ="+d);
+    }
+}
+
+class Derived extends Base
+{
+    @Override
+    void method(double d)
+    {
+        System.out.println("Derived class method called with double d ="+d);
     }
 }

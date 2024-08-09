@@ -1,9 +1,6 @@
 package interview;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 import static java.util.stream.Collectors.groupingBy;
@@ -13,6 +10,7 @@ public class EPAM2 {
 
     public static void main(String[] args) {
         List<Transaction> transactions = new ArrayList<>();
+        int[] x = frequencySort(new int[] {1,1,2,2,2,3} );
         transactions.add(new Transaction("CSE", "RAM", 1000));
         transactions.add(new Transaction("CSE", "SHYAM", 2000));
         transactions.add(new Transaction("ECE", "ABC", 3000));
@@ -24,6 +22,7 @@ public class EPAM2 {
                 .collect(groupingBy(Transaction::getEmployeeName));
 
         Map<String, Integer> salaries = new HashMap<>();
+
 
         List<Integer> list = new ArrayList<>();
         mappedTransaction.forEach(
@@ -39,5 +38,33 @@ public class EPAM2 {
 
         });
 
+    }
+
+    public static int[] frequencySort(int[] nums) {
+        Map<Integer, Integer> map = new HashMap<>();
+        for(int i=0;i< nums.length;i++) {
+            map.put(nums[i], map.getOrDefault(nums[i],0)+1);
+        }
+
+        PriorityQueue<Map.Entry<Integer,Integer>> pq = new PriorityQueue<>((a, b) -> {
+            if (a.getValue() == b.getValue()) {
+                return  b.getKey() - a.getKey();
+            }
+            else {
+                return a.getValue() - b.getValue();
+            }
+        });
+        pq.addAll(map.entrySet());
+        int[] ans = new int[nums.length];
+        int j=0;
+      for (Map.Entry<Integer, Integer> x : pq) {
+          int k = x.getKey();
+          int v = x.getValue();
+          while(k-- > 0) {
+              ans[j++]=v;
+          }
+      }
+
+        return ans;
     }
 }

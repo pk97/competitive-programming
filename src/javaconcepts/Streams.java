@@ -1,7 +1,14 @@
 package javaconcepts;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
+import java.util.Map;
+import java.util.function.Function;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
+
+import static java.util.stream.Collectors.groupingBy;
 
 public class Streams {
     public static void main(String[] args) {
@@ -21,5 +28,11 @@ public class Streams {
                 .reduce("", (a,b) -> a+b);
 
         System.out.println(ans);
+
+
+        List<Integer> list22 = Arrays.asList(1,2,2,1,4,5,6,4,5,6);
+
+        Map<Integer, Long> map = list22.stream()
+                .collect(groupingBy(Function.identity(), Collectors.counting()));
     }
 }
