@@ -24,7 +24,9 @@ public class LIS {
             List<Integer> n = new ArrayList<>();
             for (int j = 0; j < nums.length; j++) {
                 System.out.println(1<<j);
-                if ((i & (1<<j)) != 0)
+                // it represents the no. from 0 to 2^n-1 which tells which bits to consider.
+                // j tells whether to consider that element or not
+                if ((i& (1<<j)) != 0)
                     n.add(nums[j]);
             }
             ans.add(n);

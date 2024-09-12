@@ -66,5 +66,13 @@ or
 
 list.sort((a,b) -> a.age - b.age)
 
-
 ```
+
+- HashCode and Equals (belongs to Object)
+  - Equals and hashCode useful for comparison of objects. 
+  - boolean return true of false whereas Hascode returns hash which is used my hashed data structures.
+  - Equals default implementation is this == obj, i.e meaning it checks the reference, i.e location of the objects.
+  - Thus, for entity classes, we must override it.
+  - If equals of 2 objects return true, then their hasCode must be same. WHereas vica verse is not true.
+  - Reference: https://justgiveacar.medium.com/how-to-use-equals-and-hashcode-in-java-e10b8fd1aba5
+
