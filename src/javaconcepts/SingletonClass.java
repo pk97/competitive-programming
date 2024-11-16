@@ -71,3 +71,6 @@ class App {
 }
 
 
+https://www.geeksforgeeks.org/prevent-singleton-pattern-reflection-serialization-cloning/
+
+
