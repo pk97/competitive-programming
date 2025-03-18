@@ -1,4 +1,4 @@
-# Graph
+ # Graph
 
 - Use adjacency list is required to create a Graph and represent it's edges.
 - DFS

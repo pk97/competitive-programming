@@ -1,9 +1,6 @@
 package daily.challenge.arrays;
 
-import java.util.Arrays;
-
 public class SubsetSum {
-
 
     public static boolean f(int[] arr, int n, int k) {
         if (k == 0) return true;
