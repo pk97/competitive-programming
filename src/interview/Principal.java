@@ -1,5 +1,6 @@
 package interview;
 
+import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -23,4 +24,14 @@ public class Principal {
            }
        });
     }
+
+//    private void f(String s, List<String> list, int i, StringBuilder cuurentString) {
+//        if (s.length() == i) {
+//            list.add(s);
+//        }
+//        cuurentString.append(s.charAt(i));
+//        f(s,list,i+1, cuurentString);
+//        cuurentString.deleteCharAt(cuurentString.length()-1);
+//        f()
+//    }
 }

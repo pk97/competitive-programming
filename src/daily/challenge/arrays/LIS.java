@@ -45,6 +45,22 @@ public class LIS {
         System.out.println(l.size());
         System.out.println("<<<<<<<<<");
         getAllSubsequence(new int[] {1,2,3});
+        System.out.println("LIS from recursion");
+        int ans = lis(new int[] {0,1,0,3,2,3}, 0, -1);
+        System.out.println(ans);
+        int[][] dp =new int[6][7];
+        for (int i = 0; i < dp.length; i++) {
+            Arrays.fill(dp[i], -1);
+        }
+        // memoization
+        System.out.println(solve(new int[] {0,1,0,3,2,3}, 0, -1, dp));
+       // Tabulation rules
+        //  1. Base case dp[N][0..N] = 0;
+        // 2. Write loop in opposite direciton
+        // 3. copy recurrence
+        System.out.println(tab(new int[] {0,1,0,3,2,3}));
+        System.out.println(tabSpaceOp(new int[] {0,1,0,3,2,3}));
+
 
     }
 }

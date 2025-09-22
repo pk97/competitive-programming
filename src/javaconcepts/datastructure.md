@@ -48,3 +48,9 @@ class LinkList implements List, Deque
 - All methods of List, Queue, Deque
 
 
+
+hashSet -> o(1)
+LinkedhashSet -> maintain order of keys
+TreeSet ->  keep keys in sorted order
+
+
