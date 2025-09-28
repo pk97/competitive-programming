@@ -68,4 +68,30 @@ is used for logging i.e LoggingFactory with is a transient dependency of spring-
 - Accept-header is used to tell what format client expects the data. If server can serve it then well and good.
 - Accept-language
 
-    
+## Aspect oriented programming
+
+- Why it is needed? 
+  - To address cross-cutting concerns which are needed everywhere in code. Instead of polluting business knowledge it can be
+  - be used in a single place.
+    Aspect = The "toolbox"
+
+Quick summary tip to remember:
+
+Aspect = The "toolbox"
+
+Advice = The "tool"
+
+Pointcut = The "where to use it"
+
+Join point = The "moment it happens"
+
+
+@Aspect
+@Component
+public class LoggingAspect {
+
+    @Before("execution(* com.example.service.UserService.*(..))")
+    public void logBefore(JoinPoint joinPoint) {
+        System.out.println("Calling method: " + joinPoint.getSignature().getName());
+    }
+}F

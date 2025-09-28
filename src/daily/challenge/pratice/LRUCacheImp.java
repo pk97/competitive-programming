@@ -1,9 +1,6 @@
 package daily.challenge.pratice;
 
-import java.util.ArrayList;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class LRUCacheImp {
@@ -11,7 +8,7 @@ public class LRUCacheImp {
         private final int capacitry;
 
         LRUCache(int capacity) {
-//            super(capacity, 0.75f, true);
+            super(capacity, 0.75f, true);
             this.capacitry = capacity;
         }
 
@@ -44,10 +41,29 @@ public class LRUCacheImp {
         System.out.println(cache);
         System.out.println(cache.get("2"));
         cache.put("4",4);
-        System.out.println(cache.toString());
-
-
-
+        System.out.println(cache);
 
         }
+}
+
+
+class MyLRUCache {
+    Map<Integer, Node> map;
+    Node lu ;
+    Node mu;
+     static class Node {
+         int k;
+         int v;
+         Node next;
+    }
+
+    MyLRUCache(int cap) {
+          map = new HashMap<>(3);
+          lu = null;
+          mu= null;
+    }
+
+    void put() {
+         new Node();
+    }
 }
